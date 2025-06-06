@@ -26,8 +26,8 @@ submit_btn.addEventListener('click', () => {
   // Get input, split by comma or space
   let nArr = text_inp.value.split(',').map(name => name.trim().toUpperCase());
 
-  if (nArr.length < 6) {
-    alert("Please enter at least 3 names.");
+  if (nArr.length < 4) {
+    alert("Please enter at least 4 names.");
     return;
   }
   submit_btn.disabled=true
