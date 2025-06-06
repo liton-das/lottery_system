@@ -62,9 +62,9 @@ submit_btn.addEventListener('click', () => {
       msg_text_parent.innerHTML=`পুরস্কার বিতরন করবে আমাদের প্রিয় শিক্ষক : নাহিদ হাসান `
       msg_text_parent.style='color:green;font-weight:600;font-size:18px'
     } 
-  }, 500);
+  }, 200);
 });
-reset_btn.style='background:gray'
+reset_btn.style='background:gray;border:1px solid gray'
 reset_btn.disabled=true
 reset_btn.addEventListener('click',()=>{
 clearInterval(interVal)
@@ -80,6 +80,6 @@ clearInterval(interVal)
     submit_btn.style='background:green'
     
     reset_btn.disabled=true
+    reset_btn.style='background:gray;border:1px solid gray'
 })
-
 // Akib Hasan,Anik Deb,Azmayeet Hammad,Fabiha Nuva,Hira Akter,MD Sabbir Hossain,Meher Rouhi,Moshiur Hossain Pantho,Munsiun Hossain Bhuiyan,Niaj Mohammad Shakil,Rj Raj,Ruhul Amin,Srijon Ghosh,Taushif Tanim,জাহিদ হাসান
