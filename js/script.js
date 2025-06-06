@@ -7,7 +7,7 @@ let result_two = document.querySelector('.result_two')
 let result_three = document.querySelector('.result_three')
 let shuffled = document.querySelector('.shuffled')
 let shuffle_start = document.querySelector('.shuffle_start')
-
+let msg_text_parent = document.querySelector('.msg_text_parent')
 const shuffleArray=(arr)=>{
     for (let i = arr.length -1; i > 0; i--){
         const j = Math.floor(Math.random() * (i + 1));
@@ -59,6 +59,8 @@ submit_btn.addEventListener('click', () => {
       //success Message
       success_msg.innerHTML=`প্রথম, দ্বিতীয় এবং তৃতীয় পুরস্কার গুলো স্যার এর কাছ থেকে নিয়ে নিবেন  😊😊😊 । দয়া করে কেউ আমার কাছে কোনো পুরস্কার চেয়ে  আমাকে লজ্জা দিবেন না 😃😃😃 ধন্যবাদ`
       success_msg.style='color:green'
+      msg_text_parent.innerHTML=`পুরস্কার বিতরন করবে আমাদের প্রিয় শিক্ষক : নাহিদ হাসান `
+      msg_text_parent.style='color:green;font-weight:600;font-size:18px'
     } 
   }, 500);
 });
@@ -68,6 +70,7 @@ reset_btn.addEventListener('click',()=>{
 clearInterval(interVal)
     text_inp.value=''
     success_msg.innerHTML=``
+    msg_text_parent.innerHTML=``
     shuffled.innerHTML=``
     shuffle_start.innerHTML=``
     result_one.innerHTML=``
