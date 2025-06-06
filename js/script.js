@@ -67,6 +67,7 @@ reset_btn.disabled=true
 reset_btn.addEventListener('click',()=>{
 clearInterval(interVal)
     text_inp.value=''
+    success_msg.innerHTML=``
     shuffled.innerHTML=``
     shuffle_start.innerHTML=``
     result_one.innerHTML=``
